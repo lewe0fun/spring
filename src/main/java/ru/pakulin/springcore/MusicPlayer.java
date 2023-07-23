@@ -1,11 +1,13 @@
 package ru.pakulin.springcore;
 
+import java.util.List;
+
 public class MusicPlayer {
 
     /*
      * Класс музыкального плеера
      */
-    private Music music;
+    private List<Music> musicList;
     private String name;
     private int volume;
 
@@ -34,11 +36,16 @@ public class MusicPlayer {
 
     //инверсия зависимостей
 
-    public void setMusic(Music music) {
+/*    public void setMusic(List<Music> music) {
         this.music = music;
+    }*/
+
+    public void setMusicList(List<Music> musicList) {
+        this.musicList = musicList;
     }
 
     public void playMusic() {
-        System.out.println(music.getSong());
+        for(Music music:musicList)
+            System.out.println(music.getSong());
     }
 }
