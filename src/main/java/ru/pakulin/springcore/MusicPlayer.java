@@ -1,15 +1,24 @@
 package ru.pakulin.springcore;
 
-import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+import java.util.List;
+@Component
 public class MusicPlayer {
 
     /*
      * Класс музыкального плеера
      */
-    private List<Music> musicList;
+    //private List<Music> musicList;
+    @Autowired
+    private Music music;
     private String name;
     private int volume;
+
+/*    public MusicPlayer(Music music) {
+        this.music=music;
+    }*/
 
     public String getName() {
         return name;
@@ -40,12 +49,15 @@ public class MusicPlayer {
         this.music = music;
     }*/
 
-    public void setMusicList(List<Music> musicList) {
+/*    public void setMusicList(List<Music> musicList) {
         this.musicList = musicList;
     }
 
     public void playMusic() {
         for(Music music:musicList)
             System.out.println(music.getSong());
+    }*/
+    public  void  playMusic(){
+        System.out.println(music.getSong());
     }
 }
