@@ -1,63 +1,58 @@
 package ru.pakulin.springcore;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
+import java.util.Arrays;
+import java.util.Random;
+
 @Component
 public class MusicPlayer {
 
     /*
      * Класс музыкального плеера
      */
-    //private List<Music> musicList;
-    @Autowired
-    private Music music;
-    private String name;
-    private int volume;
 
-/*    public MusicPlayer(Music music) {
-        this.music=music;
-    }*/
+    private Music music1;
+    private Music music2;
+    private Music music3;
+    private Random random;
+    @Value("${musicPlayer.name}")
+    private String name;
+    @Value("${musicPlayer.volume}")
+    private int volume;
 
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public int getVolume() {
         return volume;
     }
 
-    public void setVolume(int volume) {
-        this.volume = volume;
-    }
-    /*
-     * @param music - зависимость извне
-     */
-
-/*    public MusicPlayer(Music music) {
-        this.music = music;
-    }*/
-
-    //инверсия зависимостей
-
-/*    public void setMusic(List<Music> music) {
-        this.music = music;
-    }*/
-
-/*    public void setMusicList(List<Music> musicList) {
-        this.musicList = musicList;
+    @Autowired
+    public MusicPlayer(@Qualifier("rockMusic") Music music1, @Qualifier("classicalMusic") Music music2, @Qualifier("electronicMusic") Music music3) {
+        this.music1 = music1;
+        this.music2 = music2;
+        this.music3=music3;
+        this.random=new Random();
     }
 
-    public void playMusic() {
-        for(Music music:musicList)
-            System.out.println(music.getSong());
-    }*/
-    public  void  playMusic(){
-        System.out.println(music.getSong());
+    public void playMusic(Genre genre) {
+/*        String song1=music1.getSong()[random.nextInt(2)];
+        String song2=music2.getSong()[random.nextInt(2)];*/
+        String song = null;
+        switch (genre){
+            case ROCK -> song=getRandomSong(music1);
+            case CLASSICAL -> song=getRandomSong(music2);
+            case ELECTRONIC -> song=getRandomSong(music3);
+        }
+
+        System.out.println("трек: " + song);
+    }
+    public String getRandomSong(Music music){
+        return music.getSong()[random.nextInt(3)];
     }
 }

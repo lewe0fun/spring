@@ -11,7 +11,7 @@ public class RockMusic implements Music{
         System.out.println("destruction");
     }
     @Override
-    public String getSong() {
-        return "Я свободен";
+    public String[] getSong() {
+        return new String[]{"Я свободен","я опечален","я приуныл"};
     }
 }

@@ -1,7 +1,7 @@
 package ru.pakulin.springcore;
 
 import org.springframework.stereotype.Component;
-
+@Component
 public class ElectronicMusic implements Music{
     public void doMyInit(){
         System.out.println("initialization");
@@ -10,7 +10,7 @@ public class ElectronicMusic implements Music{
         System.out.println("destruction");
     }
     @Override
-    public String getSong() {
-        return "На заре";
+    public String[] getSong() {
+        return new String[]{"На заре","нажми на кнопку","вазелиновая мазь"};
     }
 }
