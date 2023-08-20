@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c98824a1-df27-4d9b-8cb4-3a762fdec802" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/config/HelloController.java" afterDir="false" />
+    <list default="true" id="412df912-d6af-4765-8a65-30d3139c848d" name="Changes" comment="анотации">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/config/controllers/PeopleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/config/dao/PersonDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/config/models/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/config/MySpringMvcDispatcherServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/config/MySpringMvcDispatcherServletInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/config/HelloController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,11 +27,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/6.0.11/spring-beans-6.0.11.jar!/org/springframework/beans/factory/xml/spring-beans.xsd" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -54,8 +64,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "E:/My documents/Java/SpringMVC/src/main/webapp",
@@ -70,6 +82,10 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\My documents\Java\SpringMVC\src\main\webapp" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\My Documents\java\spring_1\src\main\webapp\WEB-INF" />
+      <recent name="D:\My Documents\java\spring_1\src\main\webapp\WEB-INF\views" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="tomcat_10.1.11" type="com.poratu.idea.plugins.tomcat">
@@ -80,19 +96,16 @@
       <predefined_log_file id="Tomcat Host Manager Log" />
       <option name="contextPath" value="/" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
-      <option name="envOptions">
-        <map />
-      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
-          <option name="name" value="Apache Tomcat/10.1.11" />
-          <option name="path" value="G:/apache-tomcat-10.1.11" />
-          <option name="version" value="10.1.11.0" />
+          <option name="name" value="Apache Tomcat/10.1.12" />
+          <option name="path" value="C:/apache-tomcat-10.1.12" />
+          <option name="version" value="10.1.12.0" />
         </TomcatInfo>
       </option>
       <option name="vmOptions" value="" />
-      <module name="SpringMVC" />
+      <module name="spring_1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -101,7 +114,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c98824a1-df27-4d9b-8cb4-3a762fdec802" name="Changes" comment="" />
+      <changelist id="412df912-d6af-4765-8a65-30d3139c848d" name="Changes" comment="анотации" />
       <created>1691329277899</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
