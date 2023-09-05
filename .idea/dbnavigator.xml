@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -12,11 +12,13 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="641ea807-aeb2-4fef-b21b-346bf2c3597c">
-      <console name="first_db" type="STANDARD" schema="public" session="Main"><![CDATA[insert into Person values(1,'Tom',29,'tom@mail.ru');
+    <connection id="0355a164-e336-4c42-93f1-557f2de4b53c">
+      <console name="first_db" type="STANDARD" schema="public" session="Main"><![CDATA[CREATE TABLE Person(id int PRIMARY KEY, name_ varchar, age int, email varchar);
+insert into Person values(1,'Tom',29,'tom@mail.ru');
 insert into Person values(2,'Touk',56,'tom@mail.ru');
 insert into Person values(3,'Tyj',45,'ttm@mail.ru');
 insert into Person values(4,'hom',32,'tjj@mail.ru');
+insert into Person values(5,'Lhom',37,'ltjj@mail.ru');
 select * from Person;]]></console>
     </connection>
   </component>
@@ -33,15 +35,12 @@ select * from Person;]]></console>
     <last-used-operator value="EQUAL" />
     <filters />
   </component>
-  <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
-    <recently-used-interfaces />
-  </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="641ea807-aeb2-4fef-b21b-346bf2c3597c" active="true" signed="true">
+      <connection id="0355a164-e336-4c42-93f1-557f2de4b53c" active="true" signed="true">
         <database>
           <name value="first_db" />
-          <description value="for spring course" />
+          <description value="" />
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
           <database-version value="16.0" />
