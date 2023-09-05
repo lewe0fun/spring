@@ -9,6 +9,7 @@
 <a th:href="@{/people/{id}/edit(id=${person.getId()})}">edit!</a>
 <form th:method="DELETE" th:action="@{/people/{id}/delete(id=${person.getId()})}" th:object="${person}">
     <input type="submit" value="delete!"/>
+
 </form>
 </body>
 </html>
