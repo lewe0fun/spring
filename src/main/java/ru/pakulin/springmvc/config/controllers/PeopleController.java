@@ -35,9 +35,9 @@ public class PeopleController {
 
     @PostMapping("/people")
     public String create(@ModelAttribute("person")
-                             @Valid Person person,
+                         @Valid Person person,
                          BindingResult bindingResult) {
-        if (bindingResult.hasErrors()){
+        if (bindingResult.hasErrors()) {
             return "people/new";
         }
         personDAO.save(person);
@@ -45,19 +45,30 @@ public class PeopleController {
     }
 
     @GetMapping("/{id}/edit")
-    public String edit(Model model, @PathVariable("id") int id,BindingResult bindingResult) {
-        if(bindingResult.hasErrors())return "people/edit";
+    public String edit(Model model, @PathVariable("id") int id, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) return "people/edit";
         model.addAttribute("person", personDAO.show(id));
         return "people/edit";
     }
-    @PatchMapping("/{id}")
+/*    @PatchMapping("/{id}")
     public String update(@ModelAttribute("person")Person person,
                          @PathVariable("id")int id){
         personDAO.update(id,person);
         return "redirect:/people";
+    }*/
+
+    @PatchMapping("/{id}")
+    public String update(@ModelAttribute("person") @Valid Person person, BindingResult bindingResult,
+                         @PathVariable("id") int id) {
+        if (bindingResult.hasErrors())
+            return "people/edit";
+
+        personDAO.update(id, person);
+        return "redirect:/people";
     }
+
     @DeleteMapping("/{id}/delete")
-    String delete(@PathVariable("id")int id){
+    String delete(@PathVariable("id") int id) {
         personDAO.delete(id);
         return "redirect:/people";
     }
