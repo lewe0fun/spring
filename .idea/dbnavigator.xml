@@ -13,13 +13,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="0355a164-e336-4c42-93f1-557f2de4b53c">
-      <console name="first_db" type="STANDARD" schema="public" session="Main"><![CDATA[CREATE TABLE Person(id int PRIMARY KEY, name_ varchar, age int, email varchar);
-insert into Person values(1,'Tom',29,'tom@mail.ru');
-insert into Person values(2,'Touk',56,'tom@mail.ru');
-insert into Person values(3,'Tyj',45,'ttm@mail.ru');
-insert into Person values(4,'hom',32,'tjj@mail.ru');
-insert into Person values(5,'Lhom',37,'ltjj@mail.ru');
-select * from Person;]]></console>
+      <console name="first_db" type="STANDARD" schema="postgres" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -34,6 +28,9 @@ select * from Person;]]></console>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
     <filters />
+  </component>
+  <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
+    <recently-used-interfaces />
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
