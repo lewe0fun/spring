@@ -1,19 +1,32 @@
-package ru.pakulin.springmvc.config.models;
+package ru.pakulin.springmvc.models;
 
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
-
+@Entity
+@Table(name = "Person")
 public class Person {
+    @Id
+    @Column(name = "person_id")
+    @GeneratedValue(strategy =  GenerationType.IDENTITY)
     private int id;
     @NotEmpty(message = "name should not be empty")
     @Size(min = 2,max = 32,message = "too long name")
+    @Column(name = "person_name")
     private String name;
     @Min(value = 0,message = "should be greater then 0")
+    @Column(name = "age")
     private  int age;
+
+    public String getEmail() {
+        return email;
+    }
+
     @NotEmpty(message = "name should not be empty")
     @Email(message = "email isn't valid")
+    @Column(name = "email")
     private String email;
 
     public void setAge(int age) {
@@ -28,12 +41,7 @@ public class Person {
         return age;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public Person(int id, String name, int age, String email) {
-        this.id = id;
+    public Person(String name, int age, String email) {
         this.name = name;
         this.age=age;
         this.email=email;

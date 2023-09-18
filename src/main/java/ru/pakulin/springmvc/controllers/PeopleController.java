@@ -1,4 +1,4 @@
-package ru.pakulin.springmvc.config.controllers;
+package ru.pakulin.springmvc.controllers;
 
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,8 +6,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import ru.pakulin.springmvc.config.dao.PersonDAO;
-import ru.pakulin.springmvc.config.models.Person;
+import ru.pakulin.springmvc.dao.PersonDAO;
+import ru.pakulin.springmvc.models.Person;
 
 @Controller
 @RequestMapping("/people")
