@@ -5,24 +5,21 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
+
 @Entity
 @Table(name = "Person")
 public class Person {
     @Id
     @Column(name = "person_id")
-    @GeneratedValue(strategy =  GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @NotEmpty(message = "name should not be empty")
-    @Size(min = 2,max = 32,message = "too long name")
+    @Size(min = 2, max = 32, message = "too long name")
     @Column(name = "person_name")
     private String name;
-    @Min(value = 0,message = "should be greater then 0")
+    @Min(value = 0, message = "should be greater then 0")
     @Column(name = "age")
-    private  int age;
-
-    public String getEmail() {
-        return email;
-    }
+    private int age;
 
     @NotEmpty(message = "name should not be empty")
     @Email(message = "email isn't valid")
@@ -43,8 +40,8 @@ public class Person {
 
     public Person(String name, int age, String email) {
         this.name = name;
-        this.age=age;
-        this.email=email;
+        this.age = age;
+        this.email = email;
     }
 
     public Person() {
@@ -64,6 +61,10 @@ public class Person {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     @Override
