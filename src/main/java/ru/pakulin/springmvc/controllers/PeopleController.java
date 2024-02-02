@@ -6,31 +6,29 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import ru.pakulin.springmvc.dao.PersonDAO;
+import ru.pakulin.springmvc.Services.PeopleService;
 import ru.pakulin.springmvc.models.Person;
-import ru.pakulin.springmvc.repositories.PersonRepository;
-import ru.pakulin.springmvc.services.PersonService;
+
 
 @Controller
 @RequestMapping("/people")
 public class PeopleController {
 
-    private PersonService personService;
-
+    private final PeopleService peopleService;
     @Autowired
-    public PeopleController(PersonService personService) {
-        this.personService = personService;
+    public PeopleController(PeopleService peopleService) {
+        this.peopleService = peopleService;
     }
 
     @GetMapping()
     public String index(Model model) {
-        model.addAttribute("people", personService.findAll());
+        model.addAttribute("people", peopleService.index());
         return "people/index";
     }
 
     @GetMapping("/{id}")
     public String show(@PathVariable("id") int id, Model model) {
-        model.addAttribute("person", personService.findOne(id));
+        model.addAttribute("person", peopleService.show(id));
         return "people/show";
     }
 
@@ -46,29 +44,29 @@ public class PeopleController {
         if (bindingResult.hasErrors()) {
             return "people/new";
         }
-        personService.save(person);
+        peopleService.save(person);
         return "redirect:/people";
     }
 
     @GetMapping("/{id}/edit")
     public String edit(Model model, @PathVariable("id") int id) {
-         model.addAttribute("person", personService.findOne(id));
+         model.addAttribute("person", peopleService.show(id));
         return "people/edit";
     }
 
-    @PatchMapping("/{id}")
+    @PostMapping("/{id}")
     public String update(@ModelAttribute("person") @Valid Person person, BindingResult bindingResult,
                          @PathVariable("id") int id) {
         if (bindingResult.hasErrors())
             return "people/edit";
 
-        personService.update(id, person);
+        peopleService.update(id, person);
         return "redirect:/people";
     }
 
-    @DeleteMapping("/{id}/delete")
+    @PostMapping("/{id}/delete")
     String delete(@PathVariable("id") int id) {
-        personService.delete(id);
+        peopleService.delete(id);
         return "redirect:/people";
     }
 }

@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="412df912-d6af-4765-8a65-30d3139c848d" name="Changes" comment="spring_hw" />
+    <list default="true" id="01144208-65c6-4783-a44a-8607b3e883f7" name="Changes" comment="to springBootApp">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,176 +15,123 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="iopa &lt;pakulin.yury@gmail.com&gt;" />
-      </list>
-    </option>
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="GB_spring_test" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LogFilters">
-    <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
-    <option name="CUSTOM_FILTER" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: -1
+  &quot;associatedIndex&quot;: 5
 }</component>
-  <component name="ProjectId" id="2Tc4wsLAl7xlkkpNWPIBzSzMoiA" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2WtQvyQkuUcvSGlvfaCP9eSuBUa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/My documents/Java/SpringMVC/src/main/webapp&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+    &quot;last_opened_file_path&quot;: &quot;E:/My documents/Java/spring_boot_app/src/main/java/ru/pakulin/spring_boot_app/controllers&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\My documents\Java\SpringMVC\src\main\webapp" />
+      <recent name="E:\My documents\Java\spring_boot_app\src\main\java\ru\pakulin\spring_boot_app\controllers" />
+      <recent name="E:\My documents\Java\spring_boot_app\src\main\resources\templates\people" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\My Documents\java\spring_1\src\main\webapp\WEB-INF" />
-      <recent name="D:\My Documents\java\spring_1\src\main\webapp\WEB-INF\views" />
+      <recent name="E:\My documents\Java\spring_boot_app\src\main\resources\templates\people" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="tomcat_10.1.11" type="com.poratu.idea.plugins.tomcat">
-      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
-      <predefined_log_file enabled="true" id="Tomcat Access Log" />
-      <predefined_log_file id="Tomcat Catalina Log" />
-      <predefined_log_file id="Tomcat Manager Log" />
-      <predefined_log_file id="Tomcat Host Manager Log" />
-      <option name="catalinaBase" value="" />
-      <option name="contextPath" value="/" />
-      <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
-      <option name="extraClassPath" value="" />
-      <option name="tomcatInfo">
-        <TomcatInfo>
-          <option name="name" value="Apache Tomcat/10.1.12" />
-          <option name="path" value="C:/apache-tomcat-10.1.12" />
-          <option name="version" value="10.1.12.0" />
-        </TomcatInfo>
-      </option>
-      <option name="vmOptions" value="" />
-      <module name="SpringMVC" />
+    <configuration name="SpringBootAppApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="BUNDLED" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ru.pakulin.springmvc.SpringBootAppApplication" />
+      <module name="springmvc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.pakulin.springmvc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SpringBootAppApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="412df912-d6af-4765-8a65-30d3139c848d" name="Changes" comment="анотации" />
-      <created>1691329277899</created>
+      <changelist id="01144208-65c6-4783-a44a-8607b3e883f7" name="Changes" comment="" />
+      <created>1697549631128</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1691329277899</updated>
-      <workItem from="1691766440627" duration="92000" />
+      <updated>1697549631128</updated>
     </task>
-    <task id="LOCAL-00001" summary="EDIT METHOD">
-      <created>1692535623520</created>
+    <task id="LOCAL-00001" summary="to springBootApp">
+      <option name="closed" value="true" />
+      <created>1706884552788</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1692535623520</updated>
+      <updated>1706884552788</updated>
     </task>
-    <task id="LOCAL-00002" summary="delete METHOD">
-      <created>1693503001651</created>
+    <task id="LOCAL-00002" summary="to springBootApp">
+      <option name="closed" value="true" />
+      <created>1706884663721</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1693503001651</updated>
+      <updated>1706884663721</updated>
     </task>
-    <task id="LOCAL-00003" summary="sql">
-      <created>1693927774181</created>
+    <task id="LOCAL-00003" summary="to springBootApp">
+      <option name="closed" value="true" />
+      <created>1706885505998</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1693927774181</updated>
+      <updated>1706885505998</updated>
     </task>
-    <task id="LOCAL-00004" summary="spring_hw">
-      <option name="closed" value="true" />
-      <created>1706179336388</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1706179336388</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="4" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="GB_spring" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="EDIT METHOD" />
-    <MESSAGE value="delete METHOD" />
-    <MESSAGE value="sql" />
-    <MESSAGE value="Merge remote-tracking branch 'origin/GB_spring_test' into GB_spring_test" />
-    <MESSAGE value="spring_hw" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring_hw" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+    <MESSAGE value="Spring Data JPA" />
+    <MESSAGE value="to springBootApp" />
+    <option name="LAST_COMMIT_MESSAGE" value="to springBootApp" />
   </component>
 </project>

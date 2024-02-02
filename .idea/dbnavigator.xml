@@ -8,16 +8,15 @@
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
-    <show-object-properties value="false" />
+    <show-object-properties value="true" />
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="7519ce28-52b9-4fb1-9ddc-2fb92a992b9d">
-      <console name="spring_hiber_db" type="STANDARD" schema="public" session="Main"><![CDATA[alter table Person add column email varchar(100) unique;
-select * from person;]]></console>
+    <connection id="edf51137-faa1-4518-b54a-91571285c3e4">
+      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from Person;]]></console>
     </connection>
-    <connection id="0355a164-e336-4c42-93f1-557f2de4b53c">
-      <console name="first_db" type="STANDARD" schema="postgres" session="Main" />
+    <connection id="4e461d29-82c6-43e2-896b-849f31b34153">
+      <console name="Connection 1" type="STANDARD" schema="public" session="Main"><![CDATA[select * from person]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -26,29 +25,21 @@ select * from person;]]></console>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="edf51137-faa1-4518-b54a-91571285c3e4" dataset="public.person" active-filter-id="" />
+  </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
-  </component>
-  <component name="DBNavigator.Project.MethodExecutionManager">
-    <method-browser />
-    <execution-history>
-      <group-entries value="true" />
-      <execution-inputs />
-    </execution-history>
-    <argument-values-cache />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
     <filters />
   </component>
-  <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
-    <recently-used-interfaces />
-  </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="7519ce28-52b9-4fb1-9ddc-2fb92a992b9d" active="true" signed="true">
+      <connection id="edf51137-faa1-4518-b54a-91571285c3e4" active="true" signed="true">
         <database>
-          <name value="hibernate_test" />
+          <name value="postgres" />
           <description value="" />
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
@@ -59,15 +50,15 @@ select * from person;]]></console>
           <url-type value="DATABASE" />
           <host value="localhost" />
           <port value="5432" />
-          <database value="hibernate_test" />
+          <database value="postgres" />
           <tns-folder value="" />
           <tns-profile value="" />
           <type value="USER_PASSWORD" />
-          <user value="hibernate" />
-          <deprecated-pwd value="aGliZXJuYXRl" />
+          <user value="postgres" />
+          <deprecated-pwd value="cG9zdGdyZXM=" />
         </database>
         <properties>
-          <auto-commit value="true" />
+          <auto-commit value="false" />
         </properties>
         <ssh-settings>
           <active value="false" />
@@ -132,9 +123,9 @@ select * from person;]]></console>
           <object-name-filters />
         </object-filters>
       </connection>
-      <connection id="0355a164-e336-4c42-93f1-557f2de4b53c" active="true" signed="true">
+      <connection id="4e461d29-82c6-43e2-896b-849f31b34153" active="true" signed="true">
         <database>
-          <name value="first_db" />
+          <name value="hibernate" />
           <description value="" />
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
@@ -145,12 +136,12 @@ select * from person;]]></console>
           <url-type value="DATABASE" />
           <host value="localhost" />
           <port value="5432" />
-          <database value="postgres" />
+          <database value="hibernate_test" />
           <tns-folder value="" />
           <tns-profile value="" />
           <type value="USER_PASSWORD" />
-          <user value="postgres" />
-          <deprecated-pwd value="aG1hcHdr" />
+          <user value="hibernate" />
+          <deprecated-pwd value="aGliZXJuYXRl" />
         </database>
         <properties>
           <auto-commit value="false" />
@@ -223,7 +214,7 @@ select * from person;]]></console>
       <general>
         <display-mode value="TABBED" />
         <navigation-history-size value="100" />
-        <show-object-details value="false" />
+        <show-object-details value="true" />
       </general>
       <filters>
         <object-type-filter>
