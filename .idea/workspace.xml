@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01144208-65c6-4783-a44a-8607b3e883f7" name="Changes" comment="to springBootApp">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="01144208-65c6-4783-a44a-8607b3e883f7" name="Changes" comment="clean" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +19,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -115,7 +112,39 @@
       <option name="project" value="LOCAL" />
       <updated>1706885505998</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="to springBootApp">
+      <option name="closed" value="true" />
+      <created>1706886740884</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706886740884</updated>
+    </task>
+    <task id="LOCAL-00005" summary="to springBootApp">
+      <option name="closed" value="true" />
+      <created>1706886778647</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706886778647</updated>
+    </task>
+    <task id="LOCAL-00006" summary="clean">
+      <option name="closed" value="true" />
+      <created>1706886870955</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706886870955</updated>
+    </task>
+    <task id="LOCAL-00007" summary="clean">
+      <option name="closed" value="true" />
+      <created>1706886982682</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1706886982682</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,6 +161,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Spring Data JPA" />
     <MESSAGE value="to springBootApp" />
-    <option name="LAST_COMMIT_MESSAGE" value="to springBootApp" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/GB_spring_test' into GB_spring_test&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/ru/pakulin/springmvc/config/SpringConfig.java&#10;#&#9;src/main/java/ru/pakulin/springmvc/controllers/PeopleController.java&#10;#&#9;src/main/java/ru/pakulin/springmvc/controllers/WelcomeController.java&#10;#&#9;src/main/java/ru/pakulin/springmvc/dao/PersonDAO.java&#10;#&#9;src/main/resources/templates/hello.html" />
+    <MESSAGE value="clean" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean" />
   </component>
 </project>
