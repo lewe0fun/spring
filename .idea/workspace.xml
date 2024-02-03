@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01144208-65c6-4783-a44a-8607b3e883f7" name="Changes" comment="clean" />
+    <list default="true" id="01144208-65c6-4783-a44a-8607b3e883f7" name="Changes" comment="LIBLARY">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/controllers/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/models/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/repositories/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/services/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/books/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/books/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/books/new.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/books/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/controllers/PeopleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/services/PeopleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/services/PeopleService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,10 +27,23 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="79f47901d6c82410c8c329bfa02cb6ebf4ff67e2" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -35,7 +61,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2WtQvyQkuUcvSGlvfaCP9eSuBUa" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -44,12 +72,14 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/My documents/Java/spring_boot_app/src/main/java/ru/pakulin/spring_boot_app/controllers&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/My documents/Java/spring/src/main/resources/templates/books&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\My documents\Java\spring\src\main\resources\templates\books" />
       <recent name="E:\My documents\Java\spring_boot_app\src\main\java\ru\pakulin\spring_boot_app\controllers" />
       <recent name="E:\My documents\Java\spring_boot_app\src\main\resources\templates\people" />
     </key>
@@ -75,6 +105,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SpringBootAppApplication" />
+        <item itemvalue="Application.SpringBootAppApplication" />
         <item itemvalue="Application.SpringBootAppApplication" />
       </list>
     </recent_temporary>
@@ -144,15 +176,66 @@
       <option name="project" value="LOCAL" />
       <updated>1706886982682</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="clean">
+      <option name="closed" value="true" />
+      <created>1706887161280</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1706887161280</updated>
+    </task>
+    <task id="LOCAL-00009" summary="clean">
+      <option name="closed" value="true" />
+      <created>1706887166560</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1706887166560</updated>
+    </task>
+    <task id="LOCAL-00010" summary="clean">
+      <option name="closed" value="true" />
+      <created>1706887175660</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1706887175660</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -163,6 +246,7 @@
     <MESSAGE value="to springBootApp" />
     <MESSAGE value="Merge remote-tracking branch 'origin/GB_spring_test' into GB_spring_test&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/ru/pakulin/springmvc/config/SpringConfig.java&#10;#&#9;src/main/java/ru/pakulin/springmvc/controllers/PeopleController.java&#10;#&#9;src/main/java/ru/pakulin/springmvc/controllers/WelcomeController.java&#10;#&#9;src/main/java/ru/pakulin/springmvc/dao/PersonDAO.java&#10;#&#9;src/main/resources/templates/hello.html" />
     <MESSAGE value="clean" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean" />
+    <MESSAGE value="LIBLARY" />
+    <option name="LAST_COMMIT_MESSAGE" value="LIBLARY" />
   </component>
 </project>
