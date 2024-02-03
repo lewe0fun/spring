@@ -19,24 +19,31 @@ public class PeopleService {
         this.peopleRepository = peopleRepository;
     }
 
-    public List<Person> index() {
+    public List<Person> findAll() {
         return peopleRepository.findAll();
     }
 
     public Person show(int id) {
         Optional<Person> optionalPerson = peopleRepository.findById(id);
-        return optionalPerson.orElse(null);
+        return optionalPerson.orElseThrow(()->new RuntimeException("Person not found"));
+    }
+
+    public List<Person> findByAge(int age) {
+        return peopleRepository.findByAge(age);
+    }
+    public List<Person> findByName(String name) {
+        return peopleRepository.findByName(name);
     }
 
     @Transactional
-    public void save(Person person) {
-        peopleRepository.save(person);
+    public Person save(Person person) {
+        return peopleRepository.save(person);
     }
 
     @Transactional
-    public void update(int id,Person person) {
+    public Person update(int id, Person person) {
         person.setId(id);
-        peopleRepository.save(person);
+        return peopleRepository.save(person);
     }
 
     @Transactional
