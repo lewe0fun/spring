@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import ru.pakulin.springmvc.Services.PeopleService;
+import ru.pakulin.springmvc.services.PeopleService;
 import ru.pakulin.springmvc.models.Person;
 
 
@@ -28,7 +28,7 @@ public class PeopleController {
 
     @GetMapping("/{id}")
     public String show(@PathVariable("id") int id, Model model) {
-        model.addAttribute("person", peopleService.show(id));
+        model.addAttribute("person", peopleService.findById(id));
         return "people/show";
     }
 
@@ -50,7 +50,7 @@ public class PeopleController {
 
     @GetMapping("/{id}/edit")
     public String edit(Model model, @PathVariable("id") int id) {
-         model.addAttribute("person", peopleService.show(id));
+         model.addAttribute("person", peopleService.findById(id));
         return "people/edit";
     }
 

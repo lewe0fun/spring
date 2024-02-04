@@ -2,7 +2,7 @@ package ru.pakulin.springmvc.api_controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import ru.pakulin.springmvc.Services.PeopleService;
+import ru.pakulin.springmvc.services.PeopleService;
 import ru.pakulin.springmvc.models.Person;
 
 import java.util.List;
@@ -25,11 +25,19 @@ public class PeopleApiController {
 
     @GetMapping("/{id}")
     public Person getPerson(@PathVariable("id") int id) {
-        return peopleService.show(id);
+        return peopleService.findById(id);
     }
     @GetMapping("/age/{age}")
     public List<Person>  getPersonByAge(@PathVariable("age") int age) {
         return peopleService.findByAge(age);
+    }
+    @GetMapping("/age>/{age}")
+    public List<Person>  getPersonByAgeMoreThen(@PathVariable("age") int age) {
+        return peopleService.findByAgeMoreThen(age);
+    }
+    @GetMapping("/age</{age}")
+    public List<Person>  getPersonByAgeThenLess(@PathVariable("age") int age) {
+        return peopleService.findByAgeLessThen(age);
     }
     @GetMapping("/name/{name}")
     public List<Person>  getPersonByName(@PathVariable("age") String name) {

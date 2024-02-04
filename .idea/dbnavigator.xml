@@ -13,10 +13,10 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="edf51137-faa1-4518-b54a-91571285c3e4">
-      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from Person;]]></console>
+      <console name="postgres" type="STANDARD" schema="postgres" session="Main" />
     </connection>
     <connection id="4e461d29-82c6-43e2-896b-849f31b34153">
-      <console name="Connection 1" type="STANDARD" schema="public" session="Main"><![CDATA[select * from person]]></console>
+      <console name="hibernate" type="STANDARD" schema="public" session="Main"><![CDATA[select * from Book;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -30,6 +30,14 @@
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
+  </component>
+  <component name="DBNavigator.Project.MethodExecutionManager">
+    <method-browser />
+    <execution-history>
+      <group-entries value="true" />
+      <execution-inputs />
+    </execution-history>
+    <argument-values-cache />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
@@ -55,7 +63,7 @@
           <tns-profile value="" />
           <type value="USER_PASSWORD" />
           <user value="postgres" />
-          <deprecated-pwd value="cG9zdGdyZXM=" />
+          <deprecated-pwd value="" />
         </database>
         <properties>
           <auto-commit value="false" />

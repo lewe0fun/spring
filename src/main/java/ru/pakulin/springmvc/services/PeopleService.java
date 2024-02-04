@@ -1,4 +1,4 @@
-package ru.pakulin.springmvc.Services;
+package ru.pakulin.springmvc.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
@@ -23,16 +23,26 @@ public class PeopleService {
         return peopleRepository.findAll();
     }
 
-    public Person show(int id) {
+    public Person findById(int id) {
         Optional<Person> optionalPerson = peopleRepository.findById(id);
-        return optionalPerson.orElseThrow(()->new RuntimeException("Person not found"));
+        return optionalPerson.orElseThrow(() -> new RuntimeException("Person not found"));
     }
+
 
     public List<Person> findByAge(int age) {
         return peopleRepository.findByAge(age);
     }
+
     public List<Person> findByName(String name) {
         return peopleRepository.findByName(name);
+    }
+
+    public List<Person> findByAgeMoreThen(int age) {
+        return peopleRepository.findByAgeMoreThen(age);
+    }
+
+    public List<Person> findByAgeLessThen(int age) {
+        return peopleRepository.findByAgeLessThen(age);
     }
 
     @Transactional
@@ -50,4 +60,6 @@ public class PeopleService {
     public void delete(int id) {
         peopleRepository.deleteById(id);
     }
+
+
 }

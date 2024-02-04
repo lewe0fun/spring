@@ -15,4 +15,10 @@ public interface PeopleRepository extends JpaRepository<Person,Integer> {
 
     @Query(value = "SELECT * FROM person WHERE name=?",nativeQuery = true)
     List<Person> findByName(String name);
+
+    @Query(value = "SELECT * FROM person WHERE age > ?",nativeQuery = true)
+    List<Person> findByAgeMoreThen(int age);
+
+    @Query(value = "SELECT * FROM person WHERE age < ?",nativeQuery = true)
+    List<Person> findByAgeLessThen(int age);
 }

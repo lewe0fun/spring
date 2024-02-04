@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01144208-65c6-4783-a44a-8607b3e883f7" name="Changes" comment="to springBootApp">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/api_controllers/PeopleApiController.java" afterDir="false" />
+    <list default="true" id="412df912-d6af-4765-8a65-30d3139c848d" name="Changes" comment="hw lesson 6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/controllers/PeopleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/repositories/PeopleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/repositories/PeopleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/services/PeopleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/services/PeopleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/repositories/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/repositories/BookRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,11 +17,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="GB_spring" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -54,17 +57,22 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/My documents/Java/spring_boot_app/src/main/java/ru/pakulin/spring_boot_app/controllers&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/My Documents/Downloads/library_source&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\My Documents\java\spring\src\main\java\ru\pakulin\springmvc\configs" />
       <recent name="E:\My documents\Java\spring_boot_app\src\main\java\ru\pakulin\spring_boot_app\controllers" />
       <recent name="E:\My documents\Java\spring_boot_app\src\main\resources\templates\people" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\My Documents\java\spring\src\main\resources" />
       <recent name="E:\My documents\Java\spring_boot_app\src\main\resources\templates\people" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.pakulin.springmvc.api_controllers" />
     </key>
   </component>
   <component name="RunManager">
@@ -72,7 +80,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="BUNDLED" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="ru.pakulin.springmvc.SpringBootAppApplication" />
-      <module name="springmvc" />
+      <module name="SpringMVC" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.pakulin.springmvc.*" />
@@ -92,7 +100,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="01144208-65c6-4783-a44a-8607b3e883f7" name="Changes" comment="" />
+      <changelist id="412df912-d6af-4765-8a65-30d3139c848d" name="Changes" comment="sql" />
       <created>1697549631128</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -122,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706885505998</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="hw lesson 6">
+      <created>1707073282316</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707073282316</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,6 +154,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Spring Data JPA" />
     <MESSAGE value="to springBootApp" />
-    <option name="LAST_COMMIT_MESSAGE" value="to springBootApp" />
+    <MESSAGE value="hw lesson 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw lesson 6" />
   </component>
 </project>
