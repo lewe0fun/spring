@@ -5,8 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="412df912-d6af-4765-8a65-30d3139c848d" name="Changes" comment="hw lesson 6">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/api_controllers/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/api_controllers/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/auth/JwtRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/configs/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/configs/UserDetailServiceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/services/JwtTokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/services/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/services/PeopleDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/repositories/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/repositories/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/controllers/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/controllers/WelcomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/models/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/repositories/PeopleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/repositories/PeopleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/services/PeopleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/services/PeopleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -25,7 +42,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="GB_spring" />
+        <entry key="$PROJECT_DIR$" value="mvc" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,19 +72,23 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/My Documents/Downloads/library_source&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;last_opened_file_path&quot;: &quot;/home/iopa/Загрузки/cecurity3&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/services" />
+      <recent name="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/api_controllers" />
+      <recent name="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc" />
+      <recent name="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/configs" />
       <recent name="D:\My Documents\java\spring\src\main\java\ru\pakulin\springmvc\configs" />
-      <recent name="E:\My documents\Java\spring_boot_app\src\main\java\ru\pakulin\spring_boot_app\controllers" />
-      <recent name="E:\My documents\Java\spring_boot_app\src\main\resources\templates\people" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
       <recent name="D:\My Documents\java\spring\src\main\resources" />
       <recent name="E:\My documents\Java\spring_boot_app\src\main\resources\templates\people" />
     </key>

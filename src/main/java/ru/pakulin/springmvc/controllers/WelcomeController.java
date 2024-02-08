@@ -12,4 +12,17 @@ public class WelcomeController {
         System.out.println("Hello, " + name + " " + surname);
         return "hello";
     }
+
+    @GetMapping("/login")
+    public String login() {
+        return "login";
+    }
+    @GetMapping("/admin")
+    public String admin() {
+        return "admin";
+    }
+    @GetMapping("/user")
+    public String user() {
+        return "user";
+    }
 }

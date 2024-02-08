@@ -1,6 +1,7 @@
 package ru.pakulin.springmvc.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.pakulin.springmvc.models.Person;
 import ru.pakulin.springmvc.repositories.PeopleRepository;
@@ -9,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 
-@org.springframework.stereotype.Service
+@Service
 @Transactional(readOnly = true)
 public class PeopleService {
     private final PeopleRepository peopleRepository;
@@ -34,7 +35,7 @@ public class PeopleService {
     }
 
     public List<Person> findByName(String name) {
-        return peopleRepository.findByName(name);
+        return peopleRepository.findUsersByName(name);
     }
 
     public List<Person> findByAgeMoreThen(int age) {

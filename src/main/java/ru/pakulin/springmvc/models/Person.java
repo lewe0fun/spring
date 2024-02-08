@@ -31,6 +31,9 @@ public class Person {
     @Column(name = "email")
     private String email;
 
+    @NotEmpty(message = "pass should not be empty")
+    @Column(name = "password")
+    private String password;
 
     @JoinColumn(name = "books")
     @OneToMany
@@ -83,6 +86,14 @@ public class Person {
 
     public String getEmail() {
         return email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override

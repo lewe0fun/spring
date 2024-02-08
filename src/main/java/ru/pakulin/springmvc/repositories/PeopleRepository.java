@@ -6,7 +6,6 @@ import org.springframework.stereotype.Repository;
 import ru.pakulin.springmvc.models.Person;
 
 import java.util.List;
-import java.util.Queue;
 
 @Repository
 public interface PeopleRepository extends JpaRepository<Person,Integer> {
@@ -14,11 +13,12 @@ public interface PeopleRepository extends JpaRepository<Person,Integer> {
     List<Person> findByAge(int age);
 
     @Query(value = "SELECT * FROM person WHERE name=?",nativeQuery = true)
-    List<Person> findByName(String name);
+    List<Person> findUsersByName(String name);
 
     @Query(value = "SELECT * FROM person WHERE age > ?",nativeQuery = true)
     List<Person> findByAgeMoreThen(int age);
 
     @Query(value = "SELECT * FROM person WHERE age < ?",nativeQuery = true)
     List<Person> findByAgeLessThen(int age);
+    Person findByName(String name);
 }
