@@ -19,14 +19,14 @@ public class SecurityConfig {
         http.csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(authorizationManagerRequestMatcherRegistry ->
                         authorizationManagerRequestMatcherRegistry
-                                .requestMatchers("/admin").hasAnyRole("ADMIN")
-                                .requestMatchers("/user").hasAnyRole("USER","ADMIN")
-                                .requestMatchers("/login").permitAll()
+                                .requestMatchers("/admin","/private-data").hasAnyRole("ADMIN")
+                                .requestMatchers("/user","/public-data").hasAnyRole("USER","ADMIN")
+                                .requestMatchers("/login/**").permitAll()
                                 .anyRequest().authenticated())
-                .formLogin(formLogin ->
+/*                .formLogin(formLogin ->
                 formLogin
                         .loginPage("/login")
-                        .permitAll())
+                        .permitAll())*/
                 .rememberMe(Customizer.withDefaults())
                 .httpBasic(Customizer.withDefaults())
                 .sessionManagement(httpSecuritySessionManagementConfigurer ->

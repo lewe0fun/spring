@@ -5,25 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="412df912-d6af-4765-8a65-30d3139c848d" name="Changes" comment="hw lesson 6">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/api_controllers/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/api_controllers/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/auth/JwtRequestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/configs/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/configs/UserDetailServiceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/services/JwtTokenService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/services/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/services/PeopleDetailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/configs/MyUserDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/controllers/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/controllers/WelcomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/configs/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/configs/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/models/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/models/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/repositories/PeopleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/repositories/PeopleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/services/JwtTokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/services/JwtTokenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/services/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/services/PeopleDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/services/PeopleDetailService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/services/PeopleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pakulin/springmvc/services/PeopleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

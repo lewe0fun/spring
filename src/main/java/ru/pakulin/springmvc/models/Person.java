@@ -5,11 +5,17 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
+import jdk.jfr.DataAmount;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import ru.pakulin.springmvc.services.BookService;
 
 import java.util.List;
-
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "Person")
 public class Person {
@@ -31,78 +37,17 @@ public class Person {
     @Column(name = "email")
     private String email;
 
-    @NotEmpty(message = "pass should not be empty")
     @Column(name = "password")
     private String password;
+
+    @Column(name = "role")
+    private String role;
 
     @JoinColumn(name = "books")
     @OneToMany
     private List<Book> books;
 
-    public List<Book> getBooks() {
-        return books;
-    }
-
-    public void setBooks(List<Book> books) {
-        this.books = books;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public Person(String name, int age, String email) {
-        this.name = name;
-        this.age = age;
-        this.email = email;
-    }
-
-    public Person() {
-    }
-
-    public int getId() {
-        return person_id;
-    }
-
-    public void setId(int person_id) {
-        this.person_id = person_id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    @Override
-    public String toString() {
-        return "Person{" +
-                "id=" + person_id +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", email='" + email + '\'' +
-                '}';
+    public void setId(int id) {
+        this.person_id=id;
     }
 }

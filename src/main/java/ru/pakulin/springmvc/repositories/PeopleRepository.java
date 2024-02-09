@@ -21,4 +21,6 @@ public interface PeopleRepository extends JpaRepository<Person,Integer> {
     @Query(value = "SELECT * FROM person WHERE age < ?",nativeQuery = true)
     List<Person> findByAgeLessThen(int age);
     Person findByName(String name);
+    boolean existsByName(String name);
+    boolean existsByEmail(String email);
 }

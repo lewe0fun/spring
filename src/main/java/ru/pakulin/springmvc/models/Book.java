@@ -5,7 +5,13 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "Book")
 public class Book {
@@ -32,52 +38,4 @@ public class Book {
     @ManyToOne
     private Person reader;
 
-/*    public Book() {
-    }
-
-    public Book(String title, String author, int year, Person reader) {
-        this.title = title;
-        this.author = author;
-        this.reader = reader;
-    }*/
-
-    public int getId() {
-        return book_id;
-    }
-
-    public void setId(int book_id) {
-        this.book_id = book_id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public Person getReader() {
-        return reader;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    public int getYear() {
-        return year;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
-    }
-
-    public void setReader(Person reader) {
-        this.reader = reader;
-    }
 }

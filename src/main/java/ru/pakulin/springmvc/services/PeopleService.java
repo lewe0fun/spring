@@ -45,6 +45,12 @@ public class PeopleService {
     public List<Person> findByAgeLessThen(int age) {
         return peopleRepository.findByAgeLessThen(age);
     }
+    public boolean existsByName(String name){
+        return peopleRepository.existsByName(name);
+    }
+    public boolean existsByEmail(String email){
+        return peopleRepository.existsByEmail(email);
+    }
 
     @Transactional
     public Person save(Person person) {

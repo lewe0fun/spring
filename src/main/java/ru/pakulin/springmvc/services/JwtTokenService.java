@@ -10,6 +10,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.stereotype.Service;
+import ru.pakulin.springmvc.models.Person;
 
 import java.util.*;
 import java.util.function.Function;
@@ -23,7 +24,7 @@ public class JwtTokenService {
     @Value("${jwt.secret}")
     private String SECRET;
 
-    public String generateToken(int userId, String role) {
+    public String generateToken(Person person) {
         Map<String, Object> claims = new HashMap<>();
         claims.put("role", role);
 
